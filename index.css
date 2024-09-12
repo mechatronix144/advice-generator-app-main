@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:  hsl(218, 23%, 16%);
+    font-family: "Manrope", sans-serif;
+}
+.main-container{
+   
+    position: relative;
+    margin: auto;
+    background-color:  hsl(217, 19%, 24%);
+    width: 20rem;
+    height: 20rem;
+    margin-top: 10em;
+    border-radius: 1rem;
+   
+}
+#advice-heading{
+    color: hsl(150, 100%, 66%);
+    padding-left: 6em;
+    font-size: 18px;
+    padding-top: 2em;
+
+}
+.quote-container{
+    color: white;
+    font-size: 20px;
+    padding-top: 1em;
+    width: 18rem;
+    height: 5rem;
+    padding-left: 1em;
+   text-align: center;
+    
+    
+}
+.pause-image{
+    background-image: url(./images/pattern-divider-mobile.svg);
+    margin-top: 4em;
+    margin-left: 0.7em;
+    width: 18rem;
+    height: 1rem;
+    
+}
+#button-image{
+    padding: 1em;
+    background-color:hsl(150, 100%, 66%) ;
+    border-radius: 50%;
+    border: none;
+    /* position: absolute; */
+    margin-left: 10em;
+    margin-top: 5em;
+    cursor: pointer;
+    
+   
+}
+#button-image:hover{
+    box-shadow: 0 0 20px 10px  hsl(150, 100%, 66%);
+    transform: scale(1.1);
+}
+#conclusion{
+    margin-top: 5em;
+}
+#title,#company,#name,#author{
+    color: white;
+    /* margin-top: 2em; */
+    margin-left: 2em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+@media (min-width: 600px) {
+    .main-container{
+        width: 40rem;
+        height: 20rem;
+
+    }
+    #advice-heading{
+        padding-left: 16em;
+    }
+    .quote-container{
+        padding-left: 6em;
+        width: 25em;
+    }
+    .pause-image{
+        background-image: url(./images/pattern-divider-desktop.svg);
+        width: 28em;
+        margin-left: 6em;
+    }
+    #button-image{
+        margin-left: 22em;
+        cursor: pointer;
+    }
+    #title,#company,#name,#author{
+        color: white;
+        margin-left: 80em;
+     margin-top: 1em;
+     /* margin-right: 20em; */
+     
+    }
+}
